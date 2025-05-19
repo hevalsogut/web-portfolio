@@ -2511,14 +2511,14 @@ button:hover:active:after,
 }
 
 .features section:hover {
-  background-color: #3c2c62; /* Replace with your actual color */
+  background-color: #3c2c62;
   transform: scale(1.05);
   transition: transform 0.3s ease, background-color 0.3s ease,
     border-radius 0.3s ease;
   cursor: pointer;
-  border-radius: 1em; /* Adjust the value as needed */
-  border: none; /* Remove all borders */
-  border-top: none; /* Ensure the top border is removed */
+  border-radius: 1em;
+  border: none;
+  border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: none;
