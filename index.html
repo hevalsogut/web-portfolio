@@ -1,233 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heval Söğüt | AI Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/modern.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/modern.css" />
+  </head>
+  <body>
     <!-- Fluid Background -->
     <div class="fluid-bg">
-        <div id="mouse-glow"></div>
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+      <div id="mouse-glow"></div>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
 
     <div class="container">
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-badge">
-                <i class="fas fa-robot"></i> <span id="role-badge">AI Developer</span>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="hero-badge">
+          <i class="fas fa-robot"></i> <span id="role-badge">AI Developer</span>
+        </div>
+
+        <h1 class="hero-title">Hey, I'm Heval Söğüt 👋</h1>
+
+        <p class="hero-subtitle">
+          Computer Engineering Student building intelligent automation solutions
+          and responsive web applications.
+        </p>
+
+        <!-- LinkedIn Connect -->
+        <a
+          href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/"
+          target="_blank"
+          class="search-bar linkedin-btn"
+        >
+          <span>Connect with me on LinkedIn</span>
+          <div class="search-btn"><i class="fab fa-linkedin-in"></i></div>
+        </a>
+
+        <!-- Navigation Cards -->
+        <div class="nav-grid">
+          <a href="#about" class="nav-card">
+            <i class="fas fa-user-astronaut"></i>
+            <span>Me</span>
+          </a>
+          <a href="#projects" class="nav-card">
+            <i class="fas fa-briefcase"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#experience" class="nav-card">
+            <i class="fas fa-layer-group"></i>
+            <span>Experience</span>
+          </a>
+          <a href="#contact" class="nav-card">
+            <i class="fas fa-paper-plane"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div
+          class="timeline-item"
+          style="text-align: center; max-width: 800px; margin: 0 auto"
+        >
+          <p
+            style="
+              font-size: 1.1rem;
+              color: var(--text-secondary);
+              margin-bottom: 1.5rem;
+            "
+          >
+            I am a Computer Engineering student at Manisa Celal Bayar University
+            with a laser focus on the future of AI. As an intern at
+            <a href="https://lighteagle.org" target="_blank" class="text-link"
+              >Lighteagle</a
+            >, I spend my days designing sophisticated automation workflows and
+            RAG systems using n8n and Python.
+          </p>
+          <p style="font-size: 1.1rem; color: var(--text-secondary)">
+            I believe that AI is only as good as the infrastructure supporting
+            it. That’s why I leverage my background in Java and Web Development
+            to build robust, scalable applications that integrate seamlessly
+            with modern AI tools. I enjoy solving complex data retrieval
+            problems and creating agents that actually save time.
+          </p>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="role-title">AI and Automation Developer</div>
+              <div class="company-date">Lighteagle | Recent</div>
             </div>
-            
-            <h1 class="hero-title">
-                Hey, I'm Heval Söğüt 👋
-            </h1>
-            
-            <p class="hero-subtitle">
-                Computer Engineering Student building intelligent automation solutions and responsive web applications.
+            <ul
+              style="
+                margin: 0;
+                padding-left: 1.5rem;
+                color: var(--text-secondary);
+              "
+            >
+              <li style="margin-bottom: 0.5rem">
+                Designed and deployed autonomous AI agents and complex
+                automation workflows using n8n, significantly reducing manual
+                data entry and process management.
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                Architected Retrieval-Augmented Generation (RAG) systems to
+                connect Large Language Models (LLMs) with proprietary company
+                data.
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                Implemented and managed vector databases to enable semantic
+                search and high-accuracy context retrieval for internal AI
+                tools.
+              </li>
+              <li style="margin-bottom: 0.5rem">
+                Bridged the gap between backend logic and AI performance by
+                optimizing data pipelines for smoother agent interactions.
+              </li>
+            </ul>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="role-title">Computer Engineering Intern</div>
+              <div class="company-date">ENM Digital | Dec 2024 – Jan 2025</div>
+            </div>
+            <p>
+              Engineered high-performance, responsive web applications utilizing
+              React, Node.js, TypeScript, and JavaScript. Collaborated with
+              cross-functional teams to translate business requirements into
+              technical solutions.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-header">
+              <div class="role-title">Camp Counselor & Archery Instructor</div>
+              <div class="company-date">Boise, Idaho | Jun – Oct 2024</div>
+            </div>
+            <p>
+              Led recreational activities and managed camp operations. Developed
+              archery training programs and earned Archery Instructor
+              Certification.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-network-wired project-icon"></i>
+              <h3 class="project-title">AI Automation Workflows</h3>
+              <p class="project-desc">
+                End-to-end business automation architectures built with n8n to
+                streamline operations and leverage AI capabilities for
+                enterprise growth.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-brain project-icon"></i>
+              <h3 class="project-title">RAG Knowledge Base</h3>
+              <p class="project-desc">
+                Intelligent retrieval-augmented generation system using Supabase
+                and Pinecone to create a queryable company knowledge base.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-film project-icon"></i>
+              <h3 class="project-title">Film Management System</h3>
+              <p class="project-desc">
+                Java-based system using LinkedList, Queue, Stack, Hashtable, and
+                BST for efficient data handling.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-shopping-cart project-icon"></i>
+              <h3 class="project-title">E-Commerce App</h3>
+              <p class="project-desc">
+                Java platform applying OOP principles. Features user management,
+                order processing, and inventory updates.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-book project-icon"></i>
+              <h3 class="project-title">Library System</h3>
+              <p class="project-desc">
+                Python-based library management using file handling and OOP
+                principles for book data.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-route project-icon"></i>
+              <h3 class="project-title">Dijkstra’s Algorithm</h3>
+              <p class="project-desc">
+                Java implementation to calculate shortest paths in graphs,
+                tested with real-world city data.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-university project-icon"></i>
+              <h3 class="project-title">Banking App</h3>
+              <p class="project-desc">
+                Console-based banking system for secure transactions,
+                authentication, and balance checks.
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <i class="fas fa-sign-in-alt project-icon"></i>
+              <h3 class="project-title">Login Page</h3>
+              <p class="project-desc">
+                Modern, responsive login interface using advanced CSS custom
+                properties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              If you have a project that needs some creative touch, or just want
+              to say hi, feel free to send me a message!
             </p>
 
-            <!-- LinkedIn Connect -->
-            <a href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/" target="_blank" class="search-bar linkedin-btn">
-                <span>Connect with me on LinkedIn</span>
-                <div class="search-btn"><i class="fab fa-linkedin-in"></i></div>
-            </a>
-
-            <!-- Navigation Cards -->
-            <div class="nav-grid">
-                <a href="#about" class="nav-card">
-                    <i class="fas fa-user-astronaut"></i>
-                    <span>Me</span>
-                </a>
-                <a href="#projects" class="nav-card">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="#experience" class="nav-card">
-                    <i class="fas fa-layer-group"></i>
-                    <span>Experience</span>
-                </a>
-                <a href="#contact" class="nav-card">
-                    <i class="fas fa-paper-plane"></i>
-                    <span>Contact</span>
-                </a>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>hevalsogut@gmail.com</span>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="timeline-item" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
-                    I am a Computer Engineering student at Manisa Celal Bayar University with a laser focus on the future of AI. As an intern at <a href="https://lighteagle.org" target="_blank" class="text-link">Lighteagle</a>, I spend my days designing sophisticated automation workflows and RAG systems using n8n and Python.
-                </p>
-                <p style="font-size: 1.1rem; color: var(--text-secondary);">
-                    I believe that AI is only as good as the infrastructure supporting it. That’s why I leverage my background in Java and Web Development to build robust, scalable applications that integrate seamlessly with modern AI tools. I enjoy solving complex data retrieval problems and creating agents that actually save time.
-                </p>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Izmir, Turkey</span>
             </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div class="role-title">AI and Automation Developer</div>
-                        <div class="company-date">Lighteagle | Recent</div>
-                    </div>
-                    <ul style="margin: 0; padding-left: 1.5rem; color: var(--text-secondary);">
-                        <li style="margin-bottom: 0.5rem;">Designed and deployed autonomous AI agents and complex automation workflows using n8n, significantly reducing manual data entry and process management.</li>
-                        <li style="margin-bottom: 0.5rem;">Architected Retrieval-Augmented Generation (RAG) systems to connect Large Language Models (LLMs) with proprietary company data.</li>
-                        <li style="margin-bottom: 0.5rem;">Implemented and managed vector databases to enable semantic search and high-accuracy context retrieval for internal AI tools.</li>
-                        <li style="margin-bottom: 0.5rem;">Bridged the gap between backend logic and AI performance by optimizing data pipelines for smoother agent interactions.</li>
-                    </ul>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div class="role-title">Computer Engineering Intern</div>
-                        <div class="company-date">ENM Digital | Dec 2024 – Jan 2025</div>
-                    </div>
-                    <p>Engineered high-performance, responsive web applications utilizing React, Node.js, TypeScript, and JavaScript. Collaborated with cross-functional teams to translate business requirements into technical solutions.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div class="role-title">Camp Counselor & Archery Instructor</div>
-                        <div class="company-date">Boise, Idaho | Jun – Oct 2024</div>
-                    </div>
-                    <p>Led recreational activities and managed camp operations. Developed archery training programs and earned Archery Instructor Certification.</p>
-                </div>
-
+            <div class="info-item">
+              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/hevalsogut"
+                target="_blank"
+                style="color: inherit; text-decoration: none"
+                >github.com/hevalsogut</a
+              >
             </div>
-        </section>
+          </div>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-network-wired project-icon"></i>
-                        <h3 class="project-title">AI Automation Workflows</h3>
-                        <p class="project-desc">End-to-end business automation architectures built with n8n to streamline operations and leverage AI capabilities for enterprise growth.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-brain project-icon"></i>
-                        <h3 class="project-title">RAG Knowledge Base</h3>
-                        <p class="project-desc">Intelligent retrieval-augmented generation system using Supabase and Pinecone to create a queryable company knowledge base.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-film project-icon"></i>
-                        <h3 class="project-title">Film Management System</h3>
-                        <p class="project-desc">Java-based system using LinkedList, Queue, Stack, Hashtable, and BST for efficient data handling.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-shopping-cart project-icon"></i>
-                        <h3 class="project-title">E-Commerce App</h3>
-                        <p class="project-desc">Java platform applying OOP principles. Features user management, order processing, and inventory updates.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-book project-icon"></i>
-                        <h3 class="project-title">Library System</h3>
-                        <p class="project-desc">Python-based library management using file handling and OOP principles for book data.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-route project-icon"></i>
-                        <h3 class="project-title">Dijkstra’s Algorithm</h3>
-                        <p class="project-desc">Java implementation to calculate shortest paths in graphs, tested with real-world city data.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-university project-icon"></i>
-                        <h3 class="project-title">Banking App</h3>
-                        <p class="project-desc">Console-based banking system for secure transactions, authentication, and balance checks.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <i class="fas fa-sign-in-alt project-icon"></i>
-                        <h3 class="project-title">Login Page</h3>
-                        <p class="project-desc">Modern, responsive login interface using advanced CSS custom properties.</p>
-                    </div>
-                </div>
-
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xbloogdw"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>If you have a project that needs some creative touch, or just want to say hi, feel free to send me a message!</p>
-                    
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>hevalsogut@gmail.com</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Izmir, Turkey</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/hevalsogut" target="_blank" style="color: inherit; text-decoration: none;">github.com/hevalsogut</a>
-                    </div>
-                </div>
-
-                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
-                </form>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
             </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Heval Söğüt. Built with AI.</p>
-            <div style="margin-top: 1rem; font-size: 1.5rem;">
-                <a href="https://github.com/hevalsogut" style="color: var(--text-secondary); margin: 0 10px;"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/" style="color: var(--text-secondary); margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
             </div>
-        </footer>
+            <button type="submit" class="submit-btn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
 
+      <footer>
+        <p>&copy; 2025 Heval Söğüt. Built with AI.</p>
+        <div style="margin-top: 1rem; font-size: 1.5rem">
+          <a
+            href="https://github.com/hevalsogut"
+            style="color: var(--text-secondary); margin: 0 10px"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/"
+            style="color: var(--text-secondary); margin: 0 10px"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </footer>
     </div>
 
     <script src="assets/js/modern.js"></script>
-</body>
+  </body>
 </html>
