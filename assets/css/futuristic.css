@@ -1,0 +1,228 @@
+:root {
+    --bg-color: #0a0a12; /* Slightly lighter for less contrast */
+    --primary-color: #00d2ff; /* Slightly toned down cyan */
+    --secondary-color: #a613fe; /* Slightly toned down purple */
+    --text-color: #e0e0e0;
+    --glass-bg: rgba(255, 255, 255, 0.03); /* More subtle glass */
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --font-header: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+}
+
+body, input, select, textarea {
+    font-family: var(--font-body) !important;
+    color: var(--text-color) !important;
+    background-color: var(--bg-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-header) !important;
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Override main.css backgrounds */
+#sidebar {
+    background: rgba(5, 5, 16, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-right: 1px solid var(--glass-border);
+}
+
+#sidebar nav ul li a {
+    color: var(--text-color) !important;
+    border: none !important;
+}
+
+#sidebar nav ul li a.active {
+    color: var(--primary-color) !important;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+#wrapper {
+    background: var(--bg-color) !important;
+}
+
+.wrapper.style1, .wrapper.style2, .wrapper.style3, .wrapper.style1-alt {
+    background: transparent !important; /* Let the canvas or body bg show */
+}
+
+/* Hero Section */
+#intro {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#bg-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.glitch {
+    font-size: 4em;
+    position: relative;
+    color: var(--primary-color);
+    /* Removed heavy text-shadow for cleaner look */
+}
+
+/* Typing Effect */
+.typing-container {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    color: var(--secondary-color);
+    font-family: var(--font-header);
+}
+
+.cursor {
+    animation: blink 1s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Projects Section */
+.features section {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 2em;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.features section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+    border-color: var(--primary-color);
+}
+
+.icon {
+    color: var(--secondary-color) !important;
+}
+
+/* Buttons */
+.button {
+    background: transparent !important;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--primary-color) !important;
+    font-family: var(--font-header) !important;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: var(--primary-color) !important;
+    color: var(--bg-color) !important;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.6);
+}
+
+/* Images */
+.image img {
+    border-radius: 10px;
+    filter: grayscale(50%);
+    transition: filter 0.3s;
+}
+
+.image:hover img {
+    filter: grayscale(0%);
+}
+
+/* Form */
+input, textarea {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-color) !important;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.2) !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 0 50px; /* Space for arrows */
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 33.33%; /* Show 3 items at a time on desktop */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.carousel-slide section {
+    height: 100%; /* Equal height cards */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: var(--primary-color);
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.carousel-btn:hover {
+    color: var(--secondary-color);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-slide {
+        min-width: 100%; /* Show 1 item on mobile */
+    }
+}
