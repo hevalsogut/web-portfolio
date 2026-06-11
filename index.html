@@ -21,6 +21,8 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <canvas id="neural-bg" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
   <div class="noise" aria-hidden="true"></div>
   <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
 
@@ -53,7 +55,6 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="top">
-      <canvas id="pipeline" aria-hidden="true"></canvas>
       <div class="hero-inner">
         <p class="hero-kicker reveal-load" style="--d:0">
           <span class="pulse-dot" aria-hidden="true"></span>
@@ -328,5 +329,6 @@
   </footer>
 
   <script src="assets/js/script.js" defer></script>
+  <script type="module" src="assets/js/neural-bg.js"></script>
 </body>
 </html>
