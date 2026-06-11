@@ -1,513 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heval Söğüt — AI &amp; Automation Engineer</title>
+  <meta name="description" content="Heval Söğüt builds intelligent automation systems, RAG architectures, and LLM-powered pipelines. Good AI engineering is 20% models and 80% infrastructure — he builds the 80%.">
+  <link rel="canonical" href="https://hevalsogut.com">
+  <meta property="og:title" content="Heval Söğüt — AI &amp; Automation Engineer">
+  <meta property="og:description" content="RAG architectures, LLM pipelines, intelligent automation. I build the 80%.">
+  <meta property="og:url" content="https://hevalsogut.com">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230A0B0E'/><circle cx='8' cy='16' r='3' fill='%23C6F222'/><rect x='11' y='15' width='10' height='2' fill='%23C6F222'/><circle cx='24' cy='16' r='3' fill='none' stroke='%23C6F222' stroke-width='2'/></svg>">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- SEO -->
-    <title>Heval Söğüt — AI &amp; Automation Engineer</title>
-    <meta name="description" content="Heval Söğüt is an AI &amp; Automation Engineer building intelligent automation systems, RAG architectures, and LLM-powered pipelines." />
-    <meta name="keywords" content="AI Engineer, Automation Engineer, n8n, RAG, Python, LLM, Pinecone, Supabase, Vector Databases" />
-    <meta name="author" content="Heval Söğüt" />
-    <link rel="canonical" href="https://hevalsogut.com" />
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
 
-    <!-- Open Graph (LinkedIn / social sharing) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://hevalsogut.com" />
-    <meta property="og:title" content="Heval Söğüt — AI &amp; Automation Engineer" />
-    <meta property="og:description" content="Building intelligent automation systems and RAG architectures that bridge the gap between raw data and actionable intelligence." />
-    <meta property="og:image" content="https://hevalsogut.com/assets/images/og-image.png" />
-    <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Heval Söğüt — AI &amp; Automation Engineer" />
-    <meta name="twitter:description" content="Building intelligent automation systems and RAG architectures." />
-    <meta name="twitter:image" content="https://hevalsogut.com/assets/images/og-image.png" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="assets/css/modern.css" />
-  </head>
-  <body>
-
-    <!-- Navigation -->
-    <nav id="navbar" aria-label="Primary navigation">
-      <div class="nav-container">
-        <a href="#hero" class="nav-logo" aria-label="Home">hs<span class="cursor-blink">_</span></a>
-        <div class="nav-links">
-          <a href="#about"      class="nav-link">about</a>
-          <a href="#experience" class="nav-link">experience</a>
-          <a href="#skills"     class="nav-link">skills</a>
-          <a href="#projects"   class="nav-link">projects</a>
-          <a href="#contact"    class="nav-link">contact</a>
-        </div>
-      </div>
+  <header class="site-head">
+    <a class="brand" href="#top" aria-label="Heval Söğüt — home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">HEVAL&nbsp;SÖĞÜT</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about"><span aria-hidden="true">01</span>About</a>
+      <a href="#experience"><span aria-hidden="true">02</span>Experience</a>
+      <a href="#skills"><span aria-hidden="true">03</span>Skills</a>
+      <a href="#projects"><span aria-hidden="true">04</span>Projects</a>
+      <a href="#contact" class="nav-cta">Contact</a>
     </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
 
-    <!-- ============================================================
-         HERO
-    ============================================================ -->
-    <section id="hero" aria-label="Introduction">
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#about"><span aria-hidden="true">01</span>About</a>
+    <a href="#experience"><span aria-hidden="true">02</span>Experience</a>
+    <a href="#skills"><span aria-hidden="true">03</span>Skills</a>
+    <a href="#projects"><span aria-hidden="true">04</span>Projects</a>
+    <a href="#contact"><span aria-hidden="true">05</span>Contact</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="pipeline" aria-hidden="true"></canvas>
       <div class="hero-inner">
-
-        <div class="terminal-prompt" aria-hidden="true">
-          <span class="p-user">heval</span><span class="p-at">@</span><span
-            class="p-host">portfolio</span><span class="p-sep">:</span><span
-            class="p-path">~/home</span><span class="p-dollar"> $&nbsp;</span><span
-            id="typed-command" class="p-cmd"></span><span class="terminal-cursor">▋</span>
-        </div>
-
-        <h1 class="hero-name">Heval Söğüt</h1>
-        <p class="hero-title">AI &amp; Automation Engineer</p>
-        <p class="hero-tagline">
-          Designing intelligent automation systems and RAG architectures<br class="br-desktop" />
-          that bridge the gap between raw data and actionable intelligence.
+        <p class="hero-kicker reveal-load" style="--d:0">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          AI ENGINEER @ LIGHT EAGLE AG, SWITZERLAND
         </p>
-
-        <div class="hero-actions">
-          <a
-            href="https://github.com/hevalsogut"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-            aria-label="GitHub profile"
-          >
-            <i class="fab fa-github" aria-hidden="true"></i> GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline"
-            aria-label="LinkedIn profile"
-          >
-            <i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn
-          </a>
-          <a
-            href="mailto:hevalsogut@gmail.com"
-            class="btn btn-primary"
-            aria-label="Send email"
-          >
-            <i class="fas fa-envelope" aria-hidden="true"></i> Get in touch
-          </a>
-        </div>
-      </div>
-
-      <div class="scroll-indicator" aria-hidden="true">
-        <span>scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         ABOUT
-    ============================================================ -->
-    <section id="about" aria-labelledby="about-heading">
-      <div class="section-container">
-        <div class="section-label" aria-hidden="true"><span class="lp">// </span>about</div>
-        <h2 id="about-heading" class="section-title">Who I Am</h2>
-
-        <div class="about-grid">
-          <div class="about-text fade-in">
-            <p>
-              I'm a Computer Engineering student at
-              <strong>Manisa Celal Bayar University</strong> (graduating 2027),
-              currently working as an <strong>AI &amp; Automation Engineering Intern</strong>
-              at <a href="https://lighteagle.org" target="_blank" rel="noopener" class="text-link">Light Eagle AG</a>
-              in Switzerland.
-            </p>
-            <p>
-              My work lives at the intersection of automation infrastructure and
-              applied AI, building workflows that actually save time, RAG systems
-              that retrieve the right context, and pipelines that keep LLMs grounded
-              in real data.
-            </p>
-            <p>
-              I believe good AI engineering is 20% models and 80% infrastructure.
-              I focus on the 80%.
-            </p>
-          </div>
-
-          <div class="about-quick fade-in">
-            <div class="quick-item">
-              <span class="quick-label">Location</span>
-              <span class="quick-value">Izmir, Turkey</span>
-            </div>
-            <div class="quick-item">
-              <span class="quick-label">Education</span>
-              <span class="quick-value">Manisa Celal Bayar University, 2027</span>
-            </div>
-            <div class="quick-item">
-              <span class="quick-label">Focus</span>
-              <span class="quick-value">AI, Automation, RAG Systems</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         EXPERIENCE
-    ============================================================ -->
-    <section id="experience" aria-labelledby="experience-heading">
-      <div class="section-container">
-        <div class="section-label" aria-hidden="true"><span class="lp">// </span>experience</div>
-        <h2 id="experience-heading" class="section-title">Where I've Worked</h2>
-
-        <div class="timeline">
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-line" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <div class="role-title">AI &amp; Automation Engineering Intern</div>
-                  <div class="company-name">Light Eagle AG — Switzerland</div>
-                </div>
-                <span class="date-badge">Jul 2025 – Present</span>
-              </div>
-              <ul class="timeline-list">
-                <li>Engineered production-grade knowledge bases for both AI agents and voice agents, covering the full pipeline from raw data ingestion through cleaning, chunking, and vector indexing</li>
-                <li>Designed and implemented data cleaning workflows to normalize, deduplicate, and structure unstructured business data before embedding, directly improving retrieval accuracy in RAG systems</li>
-                <li>Integrated a speech transcription model into a meeting voice agent, enabling real-time audio-to-text conversion and automated post-meeting knowledge extraction</li>
-                <li>Built and maintained automation workflows using n8n to orchestrate multi-step agent pipelines, reducing manual data handling overhead across departments</li>
-                <li>Worked across the full AI stack: Supabase, Pinecone, LLM APIs, vector embeddings, and ETL tooling to keep agents grounded in accurate, up-to-date context</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-line" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <div class="role-title">Computer Engineering Intern</div>
-                  <div class="company-name">ENM Digital</div>
-                </div>
-                <span class="date-badge">Dec 2024 – Jan 2025</span>
-              </div>
-              <ul class="timeline-list">
-                <li>Built high-performance, responsive web applications with React, Node.js, TypeScript, and JavaScript</li>
-                <li>Collaborated with cross-functional teams to translate business requirements into technical solutions</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item fade-in">
-            <div class="timeline-line" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <div class="role-title">Camp Counselor &amp; Archery Instructor</div>
-                  <div class="company-name">Paradise Point Summer Camp — Boise, Idaho, USA</div>
-                </div>
-                <span class="date-badge">Jun – Oct 2024</span>
-              </div>
-              <ul class="timeline-list">
-                <li>Led recreational activities and camp operations for international youth groups</li>
-                <li>Developed and delivered archery training programs; earned Archery Instructor Certification</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         SKILLS
-    ============================================================ -->
-    <section id="skills" aria-labelledby="skills-heading">
-      <div class="section-container">
-        <div class="section-label" aria-hidden="true"><span class="lp">// </span>skills</div>
-        <h2 id="skills-heading" class="section-title">What I Work With</h2>
-
-        <div class="skills-grid">
-
-          <div class="skill-category fade-in">
-            <div class="skill-cat-header">
-              <i class="fas fa-robot" aria-hidden="true"></i>
-              <span>AI &amp; Automation</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Claude API</span>
-              <span class="skill-tag">MCP</span>
-              <span class="skill-tag">RAG</span>
-              <span class="skill-tag">LLM Integration</span>
-              <span class="skill-tag">Pinecone</span>
-              <span class="skill-tag">Supabase</span>
-              <span class="skill-tag">Vector Databases</span>
-              <span class="skill-tag">ETL Pipelines</span>
-              <span class="skill-tag">n8n</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-in">
-            <div class="skill-cat-header">
-              <i class="fas fa-code" aria-hidden="true"></i>
-              <span>Programming</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">Java</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-in">
-            <div class="skill-cat-header">
-              <i class="fas fa-wrench" aria-hidden="true"></i>
-              <span>Tools</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">GitHub</span>
-              <span class="skill-tag">VS Code</span>
-              <span class="skill-tag">Postman</span>
-            </div>
-          </div>
-
-          <div class="skill-category fade-in">
-            <div class="skill-cat-header">
-              <i class="fas fa-brain" aria-hidden="true"></i>
-              <span>Concepts</span>
-            </div>
-            <div class="skill-tags">
-              <span class="skill-tag">Machine Learning</span>
-              <span class="skill-tag">NLP</span>
-              <span class="skill-tag">OOP</span>
-              <span class="skill-tag">Data Structures &amp; Algorithms</span>
-              <span class="skill-tag">RESTful APIs</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         PROJECTS
-    ============================================================ -->
-    <section id="projects" aria-labelledby="projects-heading">
-      <div class="section-container">
-        <div class="section-label" aria-hidden="true"><span class="lp">// </span>projects</div>
-        <h2 id="projects-heading" class="section-title">What I've Built</h2>
-
-        <div class="projects-grid">
-
-          <!-- Featured: Mechanistic Interpretability -->
-          <div class="project-card project-featured fade-in">
-            <div class="project-status-badge">Upcoming Research</div>
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-microscope"></i></div>
-            <h3 class="project-title">Mechanistic Interpretability</h3>
-            <p class="project-desc">
-              Research project exploring how transformer models internally represent
-              and process information, understanding the circuits that drive LLM behavior
-              and what neurons actually encode.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">PyTorch</span>
-              <span class="project-tag">Transformers</span>
-              <span class="project-tag">Research</span>
-            </div>
-            <div class="project-footer">
-              <span class="coming-soon-label">Coming Soon</span>
-            </div>
-          </div>
-
-          <!-- AI Automation Workflows -->
-          <div class="project-card fade-in">
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-network-wired"></i></div>
-            <h3 class="project-title">AI Automation Workflows</h3>
-            <p class="project-desc">
-              End-to-end business automation architectures built with n8n to streamline
-              operations and leverage AI capabilities at enterprise scale.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">n8n</span>
-              <span class="project-tag">Python</span>
-              <span class="project-tag">LLM</span>
-            </div>
-          </div>
-
-          <!-- RAG Knowledge Base -->
-          <div class="project-card fade-in">
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-database"></i></div>
-            <h3 class="project-title">RAG Knowledge Base</h3>
-            <p class="project-desc">
-              Intelligent retrieval-augmented generation system using Supabase and Pinecone
-              to create a queryable company knowledge base with semantic search.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Pinecone</span>
-              <span class="project-tag">Supabase</span>
-              <span class="project-tag">Python</span>
-            </div>
-          </div>
-
-          <!-- Film Management System -->
-          <div class="project-card fade-in">
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-film"></i></div>
-            <h3 class="project-title">Film Management System</h3>
-            <p class="project-desc">
-              Java-based system using LinkedList, Queue, Stack, Hashtable, and BST
-              for efficient film data management and retrieval operations.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Java</span>
-              <span class="project-tag">Data Structures</span>
-            </div>
-          </div>
-
-          <!-- E-Commerce Platform -->
-          <div class="project-card fade-in">
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-shopping-cart"></i></div>
-            <h3 class="project-title">E-Commerce Platform</h3>
-            <p class="project-desc">
-              Java platform applying OOP principles with user management,
-              order processing, and real-time inventory updates.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Java</span>
-              <span class="project-tag">OOP</span>
-            </div>
-          </div>
-
-          <!-- Dijkstra's Pathfinder -->
-          <div class="project-card fade-in">
-            <div class="project-icon-wrap" aria-hidden="true"><i class="fas fa-route"></i></div>
-            <h3 class="project-title">Dijkstra's Pathfinder</h3>
-            <p class="project-desc">
-              Java implementation to calculate shortest paths in weighted graphs,
-              validated with real-world city distance data sets.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Java</span>
-              <span class="project-tag">Algorithms</span>
-              <span class="project-tag">Graphs</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CONTACT
-    ============================================================ -->
-    <section id="contact" aria-labelledby="contact-heading">
-      <div class="section-container">
-        <div class="section-label" aria-hidden="true"><span class="lp">// </span>contact</div>
-        <h2 id="contact-heading" class="section-title">Get In Touch</h2>
-        <p class="contact-intro">
-          Have a project in mind, a role to discuss, or just want to connect?
-          My inbox is open.
+        <h1 class="hero-title">
+          <span class="line reveal-load" style="--d:1">I BUILD THE</span>
+          <span class="line reveal-load" style="--d:2">MACHINERY</span>
+          <span class="line line-accent reveal-load" style="--d:3">BEHIND THE MODELS.</span>
+        </h1>
+        <p class="hero-sub reveal-load" style="--d:4">
+          Good AI engineering is 20% models, 80% infrastructure — I build the 80%.
+          RAG architectures, LLM-powered pipelines, and intelligent automation
+          systems that survive contact with production.
         </p>
+        <div class="hero-actions reveal-load" style="--d:5">
+          <a class="btn btn-solid" href="#projects">View work<span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="mailto:hevalsogut@gmail.com">hevalsogut@gmail.com</a>
+        </div>
+      </div>
+      <div class="hero-foot reveal-load" style="--d:6" aria-hidden="true">
+        <span class="mono">PIPELINE: INGEST → EMBED → INDEX → RETRIEVE → GENERATE</span>
+        <span class="mono scroll-cue">SCROLL ↓</span>
+      </div>
+    </section>
 
-        <div class="contact-layout">
-
-          <div class="contact-cards">
-            <a href="mailto:hevalsogut@gmail.com" class="contact-card">
-              <i class="fas fa-envelope" aria-hidden="true"></i>
-              <div>
-                <span class="contact-card-label">Email</span>
-                <span class="contact-card-value">hevalsogut@gmail.com</span>
-              </div>
-            </a>
-            <a
-              href="https://github.com/hevalsogut"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-card"
-            >
-              <i class="fab fa-github" aria-hidden="true"></i>
-              <div>
-                <span class="contact-card-label">GitHub</span>
-                <span class="contact-card-value">github.com/hevalsogut</span>
-              </div>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-card"
-            >
-              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-              <div>
-                <span class="contact-card-label">LinkedIn</span>
-                <span class="contact-card-value">Heval Söğüt</span>
-              </div>
-            </a>
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="sec-num mono">01</span>
+        <span class="sec-rule" aria-hidden="true"></span>
+        <h2 class="sec-label">About</h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-statement reveal">
+          Most AI demos die the moment they meet real data. I'm interested in the
+          part that doesn't demo well — <em>ingestion, chunking, retrieval quality,
+          orchestration, evals</em> — the plumbing that turns a model into a system.
+          By day I build RAG knowledge bases and automation pipelines for a Swiss
+          firm; by night I poke at mechanistic interpretability to understand what
+          the other 20% is actually doing.
+        </p>
+        <dl class="about-facts">
+          <div class="fact reveal" style="--d:0">
+            <dt class="mono">LOCATION</dt>
+            <dd>Türkiye · working remotely with Switzerland</dd>
           </div>
+          <div class="fact reveal" style="--d:1">
+            <dt class="mono">EDUCATION</dt>
+            <dd>B.Sc. Computer Engineering, Manisa Celal Bayar University — class of 2027</dd>
+          </div>
+          <div class="fact reveal" style="--d:2">
+            <dt class="mono">FOCUS</dt>
+            <dd>RAG systems · LLM pipelines · workflow orchestration</dd>
+          </div>
+          <div class="fact reveal" style="--d:3">
+            <dt class="mono">CURRENTLY</dt>
+            <dd>AI Engineer, Light Eagle AG</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
 
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xbloogdw"
-            method="POST"
-            aria-label="Contact form"
-          >
-            <div class="form-group">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
-            </div>
-            <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
-            </div>
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell me what you're working on..."
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-full">
-              Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
-            </button>
-          </form>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="sec-num mono">02</span>
+        <span class="sec-rule" aria-hidden="true"></span>
+        <h2 class="sec-label">Experience</h2>
+      </div>
+      <ol class="xp-list">
+        <li class="xp reveal">
+          <div class="xp-meta">
+            <span class="mono xp-when">2025 — NOW</span>
+            <span class="mono xp-loc">SWITZERLAND · REMOTE</span>
+          </div>
+          <div class="xp-body">
+            <h3>AI Engineer <span class="xp-co">/ Light Eagle AG</span></h3>
+            <ul class="xp-points">
+              <li>
+                Architected a multi-agent orchestration system in LangGraph —
+                orchestrator-worker patterns automating supplier-matching workflows
+                across ingestion, cleansing, and decision stages, coordinated via
+                n8n and Python.
+              </li>
+              <li>
+                Built a production-grade RAG pipeline with ReAct-style dynamic query
+                planning and error recovery, on Pinecone vector embeddings and
+                Supabase (PostgreSQL) with hybrid search tuned for retrieval accuracy.
+              </li>
+              <li>
+                Engineered agentic tool use over MCP, grounding agents to internal
+                REST APIs, database queries, and external data sources with function
+                calling and structured output generation.
+              </li>
+              <li>
+                Developed a BI automation agent ("Portfolio Company Reporter") with
+                full observability — prompt tracing, token-usage monitoring, and
+                error logging — optimized for latency, cost, and data integrity for
+                executive stakeholders.
+              </li>
+            </ul>
+            <ul class="xp-tags mono" aria-label="Technologies">
+              <li>LANGGRAPH</li><li>MCP</li><li>RAG</li><li>n8n</li><li>PINECONE</li><li>SUPABASE</li>
+            </ul>
+          </div>
+        </li>
+        <li class="xp reveal">
+          <div class="xp-meta">
+            <span class="mono xp-when">EARLIER</span>
+            <span class="mono xp-loc">TÜRKİYE</span>
+          </div>
+          <div class="xp-body">
+            <h3>Software Engineering Intern <span class="xp-co">/ ENM Digital</span></h3>
+            <p>
+              Full-stack web development on client projects — React on the front,
+              Node.js services behind it. First taste of shipping code other people
+              depend on.
+            </p>
+            <ul class="xp-tags mono" aria-label="Technologies">
+              <li>REACT</li><li>NODE.JS</li><li>REST</li>
+            </ul>
+          </div>
+        </li>
+        <li class="xp reveal">
+          <div class="xp-meta">
+            <span class="mono xp-when">EARLIER</span>
+            <span class="mono xp-loc">USA</span>
+          </div>
+          <div class="xp-body">
+            <h3>Camp Counselor <span class="xp-co">/ Paradise Point Summer Camp</span></h3>
+            <p>
+              A summer of leading groups in a second language, on the other side of
+              the planet. Not a tech job — but the best crash course in communication
+              and ownership I've had.
+            </p>
+            <ul class="xp-tags mono" aria-label="Skills">
+              <li>LEADERSHIP</li><li>EN-US</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
 
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="sec-num mono">03</span>
+        <span class="sec-rule" aria-hidden="true"></span>
+        <h2 class="sec-label">Skills</h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-card reveal" style="--d:0">
+          <h3 class="mono">AI / LLM SYSTEMS</h3>
+          <ul>
+            <li>Claude API &amp; integrations</li><li>LangGraph</li><li>LangChain</li>
+            <li>MCP</li><li>RAG</li><li>Multi-agent orchestration</li>
+            <li>Agentic reasoning (ReAct · CoT)</li><li>Prompt engineering</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" style="--d:1">
+          <h3 class="mono">AUTOMATION / DATA</h3>
+          <ul>
+            <li>n8n orchestration</li><li>ETL pipelines</li>
+            <li>Pinecone · Supabase · vector DBs</li><li>API integration</li>
+            <li>Observability &amp; tracing</li><li>Voice-agent transcription</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" style="--d:2">
+          <h3 class="mono">LANGUAGES</h3>
+          <ul>
+            <li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Java</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal" style="--d:3">
+          <h3 class="mono">FOUNDATIONS</h3>
+          <ul>
+            <li>Machine learning</li><li>NLP</li><li>Data structures &amp; algorithms</li>
+          </ul>
+        </div>
+      </div>
+      <div class="ticker reveal" aria-hidden="true">
+        <div class="ticker-track mono">
+          <span>CLAUDE API · LANGGRAPH · LANGCHAIN · MCP · RAG · MULTI-AGENT · REACT · PINECONE · SUPABASE · n8n · ETL · OBSERVABILITY · PYTHON · TYPESCRIPT · SQL ·&nbsp;</span><span>CLAUDE API · LANGGRAPH · LANGCHAIN · MCP · RAG · MULTI-AGENT · REACT · PINECONE · SUPABASE · n8n · ETL · OBSERVABILITY · PYTHON · TYPESCRIPT · SQL ·&nbsp;</span>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-inner">
-        <span class="footer-copy">Heval Söğüt &mdash; <span class="mono">hevalsogut.com</span></span>
-        <div class="footer-links">
-          <a href="https://github.com/hevalsogut" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <i class="fab fa-github" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/heval-s%C3%B6%C4%9F%C3%BCt-898a531a6/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-          </a>
-          <a href="mailto:hevalsogut@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-          </a>
-        </div>
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="sec-num mono">04</span>
+        <span class="sec-rule" aria-hidden="true"></span>
+        <h2 class="sec-label">Projects</h2>
       </div>
-    </footer>
+      <ul class="proj-index">
+        <li class="reveal" style="--d:0">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">001</span>
+            <span class="proj-name">Mechanistic Interpretability</span>
+            <span class="proj-tag mono">RESEARCH · TRANSFORMERS</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:1">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">002</span>
+            <span class="proj-name">AI Automation Workflows</span>
+            <span class="proj-tag mono">n8n · LLM · APIs</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:2">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">003</span>
+            <span class="proj-name">RAG Knowledge Base</span>
+            <span class="proj-tag mono">EMBEDDINGS · VECTOR DB</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:3">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">004</span>
+            <span class="proj-name">Film Management System</span>
+            <span class="proj-tag mono">JAVA · OOP</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:4">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">005</span>
+            <span class="proj-name">E-Commerce Platform</span>
+            <span class="proj-tag mono">JAVA · BACKEND</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="reveal" style="--d:5">
+          <a class="proj" href="https://github.com/hevalsogut" target="_blank" rel="noopener">
+            <span class="proj-num mono">006</span>
+            <span class="proj-name">Dijkstra's Pathfinder</span>
+            <span class="proj-tag mono">ALGORITHMS · VISUALIZATION</span>
+            <span class="proj-arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-    <script src="assets/js/modern.js"></script>
-  </body>
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="section-head reveal">
+        <span class="sec-num mono">05</span>
+        <span class="sec-rule" aria-hidden="true"></span>
+        <h2 class="sec-label">Contact</h2>
+      </div>
+      <p class="contact-lede reveal">Building something where the infrastructure matters?</p>
+      <a class="contact-mail reveal" href="mailto:hevalsogut@gmail.com">
+        <span class="contact-mail-text">LET'S TALK</span>
+        <span class="contact-mail-addr mono">hevalsogut@gmail.com ↗</span>
+      </a>
+      <div class="contact-links reveal">
+        <a class="mono" href="https://github.com/hevalsogut" target="_blank" rel="noopener">GITHUB ↗</a>
+        <a class="mono" href="https://www.linkedin.com/in/hevalsogut" target="_blank" rel="noopener">LINKEDIN ↗</a>
+        <a class="mono" href="mailto:hevalsogut@gmail.com">EMAIL ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <span class="mono">© 2026 HEVAL SÖĞÜT</span>
+    <span class="mono">DESIGNED &amp; BUILT FROM SCRATCH — NO TEMPLATES</span>
+    <span class="mono"><span class="pulse-dot" aria-hidden="true"></span>SYSTEM NOMINAL</span>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
 </html>
