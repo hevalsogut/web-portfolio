@@ -1,0 +1,42 @@
+# Heval Söğüt
+
+> AI & Automation Engineer specializing in RAG architectures, LLM-powered pipelines, multi-agent orchestration, and intelligent automation systems. Currently AI Engineer at Light Eagle AG (Switzerland), working remotely from Türkiye. Philosophy: good AI engineering is 20% models and 80% infrastructure — I build the 80%.
+
+## About
+
+Heval Söğüt is an AI Engineer and Automation Developer. He builds the infrastructure that turns models into production systems: ingestion, chunking, retrieval quality, orchestration, and evals. B.Sc. Computer Engineering, Manisa Celal Bayar University (class of 2027).
+
+- Contact: hevalsogut@gmail.com
+- Website: https://hevalsogut.com
+- GitHub: https://github.com/hevalsogut
+- LinkedIn: https://www.linkedin.com/in/hevalsogut
+
+## Focus areas
+
+- RAG (Retrieval-Augmented Generation) systems and hybrid search
+- LLM-powered pipelines and agentic reasoning (ReAct, Chain-of-Thought)
+- Multi-agent orchestration (LangGraph orchestrator-worker patterns)
+- Model Context Protocol (MCP) and agentic tool use
+- Workflow automation with n8n and Python
+- Vector databases (Pinecone), Supabase / PostgreSQL
+- Observability, prompt tracing, and token-usage monitoring
+- Mechanistic interpretability (research interest)
+
+## Experience
+
+- **AI Engineer, Light Eagle AG (Switzerland, remote) — 2025–present.** Architected a multi-agent orchestration system in LangGraph automating supplier-matching workflows; built a production RAG pipeline with dynamic query planning on Pinecone + Supabase; engineered agentic tool use over MCP; developed a BI automation agent with full observability.
+- **Software Engineering Intern, ENM Digital (Türkiye).** Full-stack web development — React and Node.js.
+
+## Skills
+
+Python, TypeScript, JavaScript, SQL, Java, Claude API, LangGraph, LangChain, MCP, RAG, multi-agent orchestration, prompt engineering, n8n, ETL pipelines, Pinecone, Supabase, vector databases, observability, machine learning, NLP.
+
+## Projects
+
+- Mechanistic Interpretability — Subject-Verb Agreement in transformers: https://github.com/hevalsogut/mech-interp-subject-verb-agreement
+- AI Automation Workflows (n8n, LLM, APIs)
+- RAG Knowledge Base (embeddings, vector DB)
+
+## Hiring
+
+Open to conversations about AI engineering and automation roles where the infrastructure matters. Contact: hevalsogut@gmail.com
