@@ -703,17 +703,60 @@ main, .site-foot { position: relative; z-index: 1; }
 .more-stack { color: var(--faint); font-size: 0.9375rem; }
 
 /* ---------- skills ---------- */
-.skills { border-top: 1px solid var(--line); }
-.skill-row {
-  display: grid;
-  grid-template-columns: 13rem minmax(0, 1fr);
-  gap: 0.4rem 2rem;
-  padding-block: 1.1rem;
-  border-bottom: 1px solid var(--line);
+.sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+.skills { display: grid; gap: 2.25rem; }
+.skill-group dt {
+  margin-bottom: 0.85rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 500;
 }
-.skill-row dt { color: var(--muted); font-size: 0.9375rem; }
-.skill-list { display: flex; flex-wrap: wrap; gap: 0.35rem 1.4rem; }
-.skill-list li { font-size: 0.9375rem; }
+.skill-group dd { display: grid; gap: 0.6rem; }
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6.75rem, 1fr));
+  gap: 0.6rem;
+  max-width: 50rem;
+}
+.logo-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 5.75rem;
+  padding: 0.9rem 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.25;
+  color: var(--text);
+  transition: border-color 0.25s, background-color 0.25s;
+}
+.logo {
+  width: 1.75rem;
+  height: 1.75rem;
+  transition: transform 0.35s var(--ease);
+}
+@media (hover: hover) {
+  .logo-tile:hover { border-color: var(--line-strong); background: rgba(26, 32, 41, 0.85); }
+  .logo-tile:hover .logo { transform: translateY(-2px) scale(1.08); }
+}
+
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.chips li {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(20, 25, 33, 0.5);
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
 .lvl { color: var(--faint); margin-left: 0.25rem; }
 
 /* ---------- contact ---------- */
@@ -782,7 +825,7 @@ main, .site-foot { position: relative; z-index: 1; }
   .job { grid-template-columns: minmax(0, 1fr); padding-block: 1.75rem; }
   .job-when { display: flex; flex-wrap: wrap; gap: 0.1rem 1rem; align-items: baseline; }
   .job-place { margin-top: 0; }
-  .skill-row { grid-template-columns: minmax(0, 1fr); }
+  .logo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .feature-visual { display: none; }
   .feature .btn, .contact-actions .btn { width: 100%; }
   .contact-actions .btn-outline { width: auto; flex: 1 1 0; }
