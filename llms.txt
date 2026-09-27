@@ -1,4 +1,4 @@
-# Heval Söğüt
+# Heval Söğüt (Heval Sogut)
 
 > AI & Automation Engineer at Light Eagle AG (Switzerland, remote). Builds multi-agent systems, RAG pipelines, voice agents and automation. Founder and developer of Randeviz, an appointment-booking platform live on the App Store. B.Sc. Computer Engineering, Manisa Celal Bayar University, graduating June 2027.
 
