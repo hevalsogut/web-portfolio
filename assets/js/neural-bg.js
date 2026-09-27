@@ -1,4 +1,4 @@
-/* Heval Söğüt — interactive neural-network background
+/* Heval Söğüt: interactive neural-network background
    Plain WebGL (no library): neurons scattered in an ellipsoid, each
    wired to its nearest neighbours, with signals travelling along the
    synapses. The pointer lights up the neurons under it; hovering a

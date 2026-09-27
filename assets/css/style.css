@@ -1,5 +1,5 @@
 /* ============================================================
-   Heval Söğüt — portfolio
+   Heval Söğüt: portfolio
    Cool ink ground, neutral greys, lime reserved for signal:
    live states, network pulses, focus and the primary action.
    One family (Geist); Geist Mono only for timeline dates.
@@ -564,9 +564,10 @@ main, .site-foot { position: relative; z-index: 1; }
   content: "";
   position: absolute;
   left: 0;
-  top: 0.72em;
-  width: 0.4rem;
-  height: 1px;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
   background: var(--faint);
 }
 .job-text { margin-top: 1rem; color: var(--muted); max-width: 44rem; }

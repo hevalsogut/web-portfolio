@@ -1,4 +1,4 @@
-/* Heval Söğüt — portfolio interactions */
+/* Heval Söğüt: portfolio interactions */
 (() => {
   "use strict";
 
