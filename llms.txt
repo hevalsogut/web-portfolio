@@ -1,42 +1,41 @@
 # Heval Söğüt
 
-> AI & Automation Engineer specializing in RAG architectures, LLM-powered pipelines, multi-agent orchestration, and intelligent automation systems. Currently AI Engineer at Light Eagle AG (Switzerland), working remotely from Türkiye. Philosophy: good AI engineering is 20% models and 80% infrastructure — I build the 80%.
+> AI & Automation Engineer at Light Eagle AG (Switzerland, remote). Builds multi-agent systems, RAG pipelines, voice agents and automation. Founder and developer of Randeviz, an appointment-booking platform live on the App Store. B.Sc. Computer Engineering, Manisa Celal Bayar University, graduating June 2027.
 
-## About
-
-Heval Söğüt is an AI Engineer and Automation Developer. He builds the infrastructure that turns models into production systems: ingestion, chunking, retrieval quality, orchestration, and evals. B.Sc. Computer Engineering, Manisa Celal Bayar University (class of 2027).
-
-- Contact: hevalsogut@gmail.com
-- Website: https://hevalsogut.com
+- Website: https://hevalsogut.com/
+- Email: hevalsogut@gmail.com
 - GitHub: https://github.com/hevalsogut
 - LinkedIn: https://www.linkedin.com/in/hevalsogut
-
-## Focus areas
-
-- RAG (Retrieval-Augmented Generation) systems and hybrid search
-- LLM-powered pipelines and agentic reasoning (ReAct, Chain-of-Thought)
-- Multi-agent orchestration (LangGraph orchestrator-worker patterns)
-- Model Context Protocol (MCP) and agentic tool use
-- Workflow automation with n8n and Python
-- Vector databases (Pinecone), Supabase / PostgreSQL
-- Observability, prompt tracing, and token-usage monitoring
-- Mechanistic interpretability (research interest)
+- CV: https://hevalsogut.com/Heval_Sogut_CV.pdf
 
 ## Experience
 
-- **AI Engineer, Light Eagle AG (Switzerland, remote) — 2025–present.** Architected a multi-agent orchestration system in LangGraph automating supplier-matching workflows; built a production RAG pipeline with dynamic query planning on Pinecone + Supabase; engineered agentic tool use over MCP; developed a BI automation agent with full observability.
-- **Software Engineering Intern, ENM Digital (Türkiye).** Full-stack web development — React and Node.js.
-
-## Skills
-
-Python, TypeScript, JavaScript, SQL, Java, Claude API, LangGraph, LangChain, MCP, RAG, multi-agent orchestration, prompt engineering, n8n, ETL pipelines, Pinecone, Supabase, vector databases, observability, machine learning, NLP.
+- **AI & Automation Engineer, Light Eagle AG (Remote, Switzerland), July 2025 to present.** Built a complete voice-agent pipeline end to end: real-time speech transcription feeding a RAG retrieval-and-reasoning layer over internal knowledge, shipped as a full-stack web application. Architected a multi-agent orchestration system in LangGraph automating supplier-matching workflows (n8n, Python). Built a production-grade RAG pipeline with ReAct-style dynamic query planning on Pinecone and Supabase (PostgreSQL) with hybrid search. Engineered agentic tool use over MCP. Developed a BI automation agent ("Portfolio Company Reporter") with full observability.
+- **Software Engineering Intern, İnci Holding (İzmir, Türkiye), July 2026 to August 2026.** Built and shipped Korrente's production website: a Vite + React 18 single-page application with React Router and a hand-built, token-based design system using zero UI libraries, meeting WCAG AA. Engineered a pure, unit-tested battery-storage revenue engine (grid-arbitrage and solar-plus-storage modes) computing payback, ROI, LCOS and NPV from Netherlands market data.
+- **Software Engineering Intern, ENM Digital (Hybrid, Manisa, Türkiye), December 2024 to January 2025.** Developed three client-facing web applications in React, Node.js and TypeScript within a 2-month cycle, with RESTful API integrations.
+- **Camp Counselor & Archery Instructor, Paradise Point Summer Camp (Boise, Idaho, USA), June to October 2024.**
 
 ## Projects
 
-- Mechanistic Interpretability — Subject-Verb Agreement in transformers: https://github.com/hevalsogut/mech-interp-subject-verb-agreement
-- AI Automation Workflows (n8n, LLM, APIs)
-- RAG Knowledge Base (embeddings, vector DB)
+- **Randeviz** (Founder & Developer): https://www.randeviz.com. Appointment-booking platform for service businesses, live on the App Store. Expo + React Native + TypeScript for iOS and Android; Supabase backend (PostgreSQL, Row Level Security, realtime, Edge Functions); real-availability booking without double-booking; optional approval workflows; push confirmations and reminders; English/Turkish localisation.
+- **Mechanistic Interpretability**: https://github.com/hevalsogut/mech-interp-subject-verb-agreement. Identified a subject-verb agreement circuit in GPT-2 Small through activation-patching experiments with TransformerLens.
+- AI Automation Workflows (n8n, LLMs, APIs)
+- RAG Knowledge Base (embeddings, vector database)
 
-## Hiring
+## Skills
 
-Open to conversations about AI engineering and automation roles where the infrastructure matters. Contact: hevalsogut@gmail.com
+- AI / LLM systems: Claude API, LangGraph, LangChain, MCP, RAG, multi-agent orchestration, agentic reasoning (ReAct, CoT), prompt engineering
+- AI-assisted development: Claude Code, Google Antigravity, OpenClaw, Hermes
+- Web & mobile: React, Next.js, React Native, Expo, Node.js, TypeScript, REST APIs
+- Data & backend: PostgreSQL, Supabase, Pinecone, ETL pipelines, SQL
+- Tools: Docker, Git, GitHub, LangSmith, Weights & Biases
+- Foundations: machine learning, NLP, data structures & algorithms
+- Spoken languages: English (fluent), Turkish (native), German (beginner)
+
+## Certifications
+
+- Artificial Intelligence Fundamentals, IBM (2026)
+
+## Contact
+
+Open to conversations about AI engineering and automation roles. Email: hevalsogut@gmail.com
