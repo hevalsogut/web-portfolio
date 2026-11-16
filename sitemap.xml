@@ -10,4 +10,10 @@
       <image:loc>https://hevalsogut.com/assets/images/og-image.png</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://hevalsogut.com/robot/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>

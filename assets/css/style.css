@@ -254,6 +254,7 @@ main, .site-foot { position: relative; z-index: 1; }
   font-size: 1rem;
   letter-spacing: -0.01em;
   margin-right: auto;
+  white-space: nowrap;
 }
 .brand-mark {
   width: 0.75rem;
@@ -265,6 +266,7 @@ main, .site-foot { position: relative; z-index: 1; }
 .site-nav { display: flex; gap: 0.25rem; }
 .site-nav a {
   position: relative;
+  white-space: nowrap;
   padding: 0.5rem 0.75rem;
   border-radius: 8px;
   color: var(--muted);
@@ -288,6 +290,9 @@ main, .site-foot { position: relative; z-index: 1; }
 .site-nav a:hover::after { transform: scaleX(1); }
 .site-nav a[aria-current="true"] { color: var(--text); }
 .site-nav a[aria-current="true"]::after { transform: scaleX(1); background: var(--signal); }
+.site-nav a[aria-current="page"] { color: var(--text); }
+.site-nav a[aria-current="page"]::after { transform: scaleX(1); background: var(--signal); }
+.mobile-menu nav > a[aria-current="page"] { color: var(--signal); }
 
 .nav-toggle {
   display: none;
@@ -333,6 +338,7 @@ main, .site-foot { position: relative; z-index: 1; }
 .mobile-menu nav > :nth-child(4) { animation-delay: 120ms; }
 .mobile-menu nav > :nth-child(5) { animation-delay: 160ms; }
 .mobile-menu nav > :nth-child(6) { animation-delay: 200ms; }
+.mobile-menu nav > :nth-child(7) { animation-delay: 240ms; }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-8px); } }
 .mobile-menu nav {
   display: flex;
@@ -348,11 +354,11 @@ main, .site-foot { position: relative; z-index: 1; }
 }
 .mobile-menu .btn { margin-top: 1.75rem; align-self: flex-start; }
 
-@media (max-width: 879px) {
+@media (max-width: 1023px) {
   .site-nav, .head-cv { display: none; }
   .nav-toggle { display: block; }
 }
-@media (min-width: 880px) {
+@media (min-width: 1024px) {
   .mobile-menu { display: none !important; }
 }
 

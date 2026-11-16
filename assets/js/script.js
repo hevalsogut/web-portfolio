@@ -44,7 +44,7 @@
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && !menu.hidden) setOpen(false, true);
     });
-    window.matchMedia("(min-width: 880px)").addEventListener("change", (e) => {
+    window.matchMedia("(min-width: 1024px)").addEventListener("change", (e) => {
       if (e.matches && !menu.hidden) setOpen(false, false);
     });
   }
@@ -52,7 +52,8 @@
   /* ------------------------------------------------------------
      Mark the nav link for the section currently in view
      ------------------------------------------------------------ */
-  const links = [...document.querySelectorAll(".site-nav a")];
+  const links = [...document.querySelectorAll(".site-nav a")]
+    .filter((a) => (a.getAttribute("href") || "").startsWith("#"));
   const sections = links
     .map((a) => document.querySelector(a.getAttribute("href")))
     .filter(Boolean);
